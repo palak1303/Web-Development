@@ -1,0 +1,40 @@
+#outer{
+    height: 400px;
+    width:400px;
+}
+/* em -font size parent or self */
+
+button{
+    font-size:50px;
+    border-radius:15px;
+    border:5px solid green;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/* snowball - double w.r.t previous one */
+/* rem - font size w.r.t parent */
+div{
+    font-size:2rem;
+}
+
+#div2{
+    height:150px;
+    width:300px;
+    background-color: grey;
+    border: 5px dotted black;
+    margin : 20px 1em 40px 2em;
+    padding:1em;
+}
+
+.div3{
+    height:100px;
+    width:100px;
+    background-color: pink;
+    border: 2px solid black;
+    border-radius:50%;
+    display:inline-block;
+    margin:20px;
+}
+li{
+    display:inline;
+}
