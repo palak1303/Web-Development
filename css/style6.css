@@ -1,0 +1,39 @@
+/* Grid */
+.container{
+    width:600px;
+    height:300px;
+    background-color:yellow;
+    display:grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: repeat(3,1fr);
+    row-gap:10px;
+    justify-items: start;
+    grid-template-rows:1fr 1fr 1fr 1fr;
+    grid-gap:10px;
+    align-items:start;
+    justify-items: end;
+
+}
+
+.item{
+    width:50px;
+    height:50px;
+    background-color: greenyellow;
+    border:2px solid black;
+    text-align:center;
+
+}
+#one{
+    grid-column: 1/4;
+    background-color: brown;
+    /* grid-column:1/span 3; */
+}
+#two{
+    /* grid-row: 1/sapn 3; */
+}
+#two{
+   
+    justify-self: center;  
+    align-self: center;
+    /* place-items: center; */
+}
