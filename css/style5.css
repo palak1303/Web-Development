@@ -1,0 +1,43 @@
+/* Flexbox 
+   1. flex direction
+   row ; main axis ,left to right
+   row-reverse,right to left
+   column , main axis, top to bottom
+   column-reverse, bottom to top
+
+   2. justify-content
+   flex-wrap:nonwrap/wrap/wrap-reverse/base-line
+
+   3.align item(same as below)
+
+   4.align content(priority given to content)
+   align content:flex-start/flex-end/center
+   align content : space-between/space-around/evenly/baseline
+
+   5.align self(high priorty>element)
+
+   6.flexsize
+   
+ */
+#container{
+    height:300px;
+    width:80%;
+    background-color: azure;
+    margin:10px auto;
+    border: 2px solid black;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap:wrap;
+    align-content:center;
+}
+h1{
+    text-align: center;
+}
+#container div{
+    height:100px;
+    width:100px;
+    color:white;
+    text-align:center;
+    font-size: 1.5em;
+}
