@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <!-- ques1 -->
+    <h2>Registration Form</h2>
+    <form action = "/action">
+        <div>
+            <label for = "username" > </label>
+            <input type = "text"
+             id = "username" 
+             placeholder = "first name"
+             name = "first"/>
+             <input type ="text"
+             id = lastname
+             placeholder = "Last name"
+             name = "last"/>
+        </div>
+        <div>
+            <label for = "gender" >Please select gender</label>
+            <select type = "dropdown">
+                <option value = "male" selected>Male</option>
+                <option value = "female">Female</option>
+                <option value = "other">Other</option>
+            </select>
+        </div>
+        <div>
+            Do you agree to all terms of service?
+            <label for = "agree">Yes, I agree</label>
+            <input type = "checkbox" id = "agree" checked>
+        </div>
+        <button>Register</button>
+</form>
+
+<!-- ques2  -->
+    Student Information
+    <table border = "black">
+        <tr>
+            <th rowspan = "6">Info</th>
+            <th rowspan = "2">Name</th>
+            <th colspan = "2">Address</th>
+        </tr>
+        <tr>
+            <th>City</th>
+            <th>House</th>
+        </tr>
+
+        <tr>
+            <td>A</td>
+            <td>Delhi</td>
+            <td>2</td>
+        </tr>
+
+        <tr>
+            <td>b</td>
+            <td>Delhi</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>c</td>
+            <td>Delhi</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>Delhi</td>
+            <td>2</td>
+        </tr>
+    </table>
+
+    <!-- ques3 -->
+    <form>
+        <div>
+        Name:
+        <input type ="text">
+        </div>
+        <div>
+        sex:
+        <input type = "radio" id = "male" value = "male" name = "male">
+        <label for="male ">Male</label>
+        <input type = "radio" id = "female" value = "female" name = "female">
+        <label for="male ">female</label>
+        </div>
+        <div>
+        country:
+        <select name = "country" id = "country" >
+            <option>Select your option</option>
+            <option value = "Usa">student</option>
+            <option value = "India">developer</option>
+        </select>
+        </div>
+        <div>
+            Message:
+        <label for ="feedback"></label>
+        <textarea id = "feedback" rows = "5" cols = "10" placeholder = "write your feedback"></textarea>
+        <button>Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>
