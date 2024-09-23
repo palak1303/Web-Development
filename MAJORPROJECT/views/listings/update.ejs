@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WanderLust</title>
+</head>
+<body>
+    <h1>Update a New Listing</h1>
+    <form method ="POST" action ="/listings/<%=listing._id%>?_method=PUT">
+        <input name = "listing[title]" placeholder = "enter title " type="text" value = "<%=listing.title%>">
+        <br>
+        <br>
+        <textarea name = "listing[description]" placeholder = "enter description " ><%=listing.description%></textarea>
+        <br>
+        <br>
+        <input name = "listing[image]" placeholder = "enter image URL/LINK " type = "text" value ="<%=listing.image%>" >
+        <br>
+        <br>
+        <input name = "listing[price]" placeholder = "enter price" type ="number" value = "<%=listing.price%>">
+        <br>
+        <br>
+        <input name = "listing[country]" placeholder = "enter country " type ="text" value ="<%=listing.country%>" >
+        <br>
+        <br>
+        <input name = "listing[location]" placeholder = "enter location " type = "text" value = "<%=listing.location%>">
+        <br>
+        <br>
+        <button>UPDATE</button>
+    </form>
+    
+</body>
+</html>
