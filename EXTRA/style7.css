@@ -1,0 +1,68 @@
+/* border: width color style */
+/* padding : top left bottom right */
+/* margin: top left bottom right */
+/* * div{
+    height :200px;
+    width : 500px;
+    background-color: pink;
+    border-width:5px;
+    border-style:solid;
+    border-color:black; 
+    border: 5px solid black;
+    border-left-color:blue;
+    border-left-style:dashed;
+    border-radius: 50px;
+    border-top-right-radius:10px;
+    border-bottom-left-radius:10px;
+     padding-top:10px;
+    padding-left:10px;
+    margin-bottom:25px; 
+    margin-left:25px;
+}  */
+h1{
+    border-width:2px;
+    border-style:dashed;
+    border-color:blueviolet;
+}
+button{
+    border:2px solid black;
+    border-radius:10px;
+    padding-left:25px;
+    padding-right:25px;
+    padding :0 30px 0 30px;
+    background-color: coral;
+}
+
+#outer{
+    background-color: white;
+    height:200px;
+    width:70x;
+    border:2px solid black;
+    padding: 20px;
+}
+
+.inner1{
+    width:50px;
+    height:50px;
+    border:2px solid black;
+    border-radius:50%;
+    margin:10px;
+}
+#red{
+    background-color: red;
+}
+#green{
+    background-color:green;
+}
+#yellow{
+    background-color:yellow;
+}
+span{
+    background-color: greenyellow;
+    border: 20px;
+    height:100px;
+    width:200px;
+    padding:50px;
+    margin:20px;
+
+}
