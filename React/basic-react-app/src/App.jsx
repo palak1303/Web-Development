@@ -1,16 +1,12 @@
 import './App.css'
-import Title from "./Title.jsx";
-import Product from "./Product.jsx";
+import ProductTab from "./ProductTab.jsx";
+import Button from "./Button";
+import Form from './Form.jsx';
 
 function App() {
   return (
-    // <div>  
-    //   <Title/>
-    // </div>
     <>
-    <Product/>
-    <Product/>
-    <Product/>
+      <Form></Form>
     </>
 );
 
