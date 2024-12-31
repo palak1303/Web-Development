@@ -1,33 +1,65 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WanderLust</title>
-</head>
-<body>
+<% layout("/layouts/boilerplate") %>
+
+<div class="row mt-3">
+    <div class="col-8 offset-2">
     <h1>Update a New Listing</h1>
-    <form method ="POST" action ="/listings/<%=listing._id%>?_method=PUT">
-        <input name = "listing[title]" placeholder = "enter title " type="text" value = "<%=listing.title%>">
-        <br>
-        <br>
-        <textarea name = "listing[description]" placeholder = "enter description " ><%=listing.description%></textarea>
-        <br>
-        <br>
-        <input name = "listing[image]" placeholder = "enter image URL/LINK " type = "text" value ="<%=listing.image%>" >
-        <br>
-        <br>
-        <input name = "listing[price]" placeholder = "enter price" type ="number" value = "<%=listing.price%>">
-        <br>
-        <br>
-        <input name = "listing[country]" placeholder = "enter country " type ="text" value ="<%=listing.country%>" >
-        <br>
-        <br>
-        <input name = "listing[location]" placeholder = "enter location " type = "text" value = "<%=listing.location%>">
-        <br>
-        <br>
-        <button>UPDATE</button>
-    </form>
+    <form method ="POST" action ="/listings/<%=listing._id%>?_method=PUT" novalidate class="needs-validation" enctype="multipart/form-data">
+        <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input name = "listing[title]" placeholder = "enter title " type="text" value = "<%=listing.title%>" class = "form-control" required>
+        <div class="valid-feedback">Title looks good</div>
+        </div>
     
-</body>
-</html>
+        <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <textarea name = "listing[description]" placeholder = "enter description " class = "form-control" required><%= listing.description %></textarea>
+        <div class="valid-feedback">Description looks good</div>
+        <div class="invalid-feedback">Description Required</div>
+        </div>
+        
+        <div class="'mb-3">
+            Original Listing Image
+            <img src= "<%= originalImageUrl%>" >
+        </div>
+        <div class="mb-3">
+            <label 
+            for="image" 
+            class="form-label">Upload New Image</label>
+            <input
+              name="listing[image]"
+              type="file"
+              class="form-control"
+              required
+            />
+        <div class="valid-feedback">Image look good</div>
+        <div class="invalid-feedback">Please provide valid link</div>
+        </div>
+        
+        <div class="row">
+            <div class="mb-3 col-md-4">
+        <label for="price" class="form-label">Price</label>
+        <input name = "listing[price]" placeholder = "enter price" type ="number" value = "<%=listing.price%>" class = "form-control" required>
+        <div class="invalid-feedback">price is required</div>
+        </div>
+    
+        <div class="mb-3 col-md-8">
+        <label for="country" class="form-label">Countrye</label>
+        <input name = "listing[country]" placeholder = "enter country " type ="text" value ="<%=listing.country%>" class = "form-control" required>
+        <div class="invalid-feedback">country name is required</div>
+        </div>   
+        
+        <div class="mb-3">
+        <label for="loaction" class="form-label">Location</label>
+        <input name = "listing[location]" placeholder = "enter location " type = "text" value = "<%=listing.location%>" class = "form-control" required>
+        <div class="invalid-feedback">location is required</div>
+    </div>
+
+        <button class="btn btn-dark edit-btn mt-3">
+        UPDATE
+        </button>
+    </form>    
+</div>
+</div>
+
+<!-- <srcipt src = "/js/srcipt.js"></srcipt> -->
+
